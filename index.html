@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <form id="game-form">
+            <label for="lower-bound">Lower Bound:</label><br>
+            <input type="number" id="lower-bound" name="lower-bound"><br>
+            
+            <label for="upper-bound">Upper Bound:</label><br>
+            <input type="number" id="upper-bound" name="upper-bound"><br>
+            
+            <button type="button" onclick="startGame()">Start Game</button>
+        </form>
+
+        <div id="game-area" style="display:none;">
+            <label for="user-guess">Enter your guess:</label><br>
+            <input type="number" id="user-guess" name="user-guess"><br>
+            <button type="button" onclick="makeGuess()">Make Guess</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
